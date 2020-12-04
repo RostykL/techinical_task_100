@@ -30,6 +30,7 @@ export default function Birthday() {
         <div className="birthday">
             <div className="birthday_title align">Employees birthday</div>
             <div className="birthday_block">
+                {checkedMonth.size === 0? "No selected Employees" : null}
                 {[...checkedMonth].map(el => {
                     return (
                         <div key={el} className="birthday_block_item">
